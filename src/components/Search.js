@@ -5,8 +5,7 @@ import { FaSearch } from "react-icons/fa";
 
 const Search = ({ state, changeInput, updateRes }) => {
   React.useEffect(() => {
-    const { query } = state;
-    console.log(query);
+    const query = state.query.toLowerCase();
     if (query.length >= 3) {
       const res = data.filter((person) => {
         const [name, nimTPB, nimJurusan] = person;
