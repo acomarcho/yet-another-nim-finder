@@ -1,0 +1,48 @@
+@import "../utilities/variables";
+
+section.search {
+  padding: 60px;
+  @media (max-width: 640px) {
+    padding: 30px;
+  }
+  .info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+
+    form {
+      position: relative;
+      svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        color: $darkGray;
+      }
+      input {
+        width: 100%;
+        padding: 20px;
+        padding-left: 50px;
+        border-radius: 100px;
+        border: none;
+        transition: $transition;
+        font-size: 16px;
+        &:hover {
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        &:focus {
+          border: none;
+          outline: none;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  .tip {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
